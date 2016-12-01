@@ -1,5 +1,7 @@
 package br.com.abc.javacore.ZZHlambdas.classes;
 
+import java.util.Comparator;
+
 /**
  * Created by William Suane on 11/18/2016.
  */
@@ -21,6 +23,7 @@ public class Carro {
                 ", ano=" + ano +
                 '}';
     }
+
 
     public String getNome() {
         return nome;
