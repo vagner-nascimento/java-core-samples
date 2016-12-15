@@ -25,7 +25,6 @@ public class OptionalTest2 {
         Map<String, String> map = new HashMap<>();
         System.out.println(Optional.ofNullable(map.get("kaka")));
         stringToInt("A");
-
     }
 
     /***
