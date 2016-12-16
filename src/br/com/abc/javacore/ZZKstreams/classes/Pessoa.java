@@ -20,7 +20,8 @@ public class Pessoa {
     public static List<Pessoa> bancoDePessoas(){
         return asList(
                 new Pessoa("William Suane", 22, 2000),
-                new Pessoa("Mercy", 28, 3500),
+                new Pessoa("Mercy", 22, 3500),
+                new Pessoa("Mercy", 22, 3500),
                 new Pessoa("Ana", 19, 1895),
                 new Pessoa("Thor", 23, 1980),
                 new Pessoa("Hulk", 35, 8000),
@@ -30,6 +31,23 @@ public class Pessoa {
 
         );
     }
+
+    @Override
+    public boolean equals(Object o) {
+        if (this == o) return true;
+        if (o == null || getClass() != o.getClass()) return false;
+
+        Pessoa pessoa = (Pessoa) o;
+
+        return nome != null ? nome.equals(pessoa.nome) : pessoa.nome == null;
+
+    }
+
+    @Override
+    public int hashCode() {
+        return nome != null ? nome.hashCode() : 0;
+    }
+
     public String getNome() {
         return nome;
     }
