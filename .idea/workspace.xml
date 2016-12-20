@@ -6,9 +6,8 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="ba5d5ea4-f2a3-482b-9809-bf560d5623df" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/br/com/abc/javacore/ZZKstreams/test/StreamTest4Reduce.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/br/com/abc/javacore/ZZKstreams/test/StreamTest5GerandoStreams.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/br/com/abc/javacore/ZZKstreams/classes/Pessoa.java" afterPath="$PROJECT_DIR$/src/br/com/abc/javacore/ZZKstreams/classes/Pessoa.java" />
     </list>
     <ignored path="JavaOnline.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -36,18 +35,6 @@
             <state relative-caret-position="297">
               <caret line="18" column="55" selection-start-line="18" selection-start-column="7" selection-end-line="18" selection-end-column="55" />
               <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="OptionalTest2.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/br/com/abc/javacore/ZZJoptional/test/OptionalTest2.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1269">
-              <caret line="54" column="37" selection-start-line="54" selection-start-column="37" selection-end-line="54" selection-end-column="37" />
-              <folding>
-                <element signature="imports" expanded="false" />
-              </folding>
             </state>
           </provider>
         </entry>
@@ -84,16 +71,48 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="StreamTest4Reduce.java" pinned="false" current-in-tab="true">
+      <file leaf-file-name="StreamTest4Reduce.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/br/com/abc/javacore/ZZKstreams/test/StreamTest4Reduce.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="405">
-              <caret line="42" column="23" selection-start-line="42" selection-start-column="23" selection-end-line="42" selection-end-column="23" />
+            <state relative-caret-position="459">
+              <caret line="46" column="48" selection-start-line="46" selection-start-column="48" selection-end-line="46" selection-end-column="48" />
               <folding>
                 <element signature="imports" expanded="true" />
                 <element signature="e#1781#1782#0" expanded="true" />
                 <element signature="e#1837#1838#0" expanded="true" />
               </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="StreamTest5GerandoStreams.java" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/br/com/abc/javacore/ZZKstreams/test/StreamTest5GerandoStreams.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="333">
+              <caret line="46" column="0" selection-start-line="46" selection-start-column="0" selection-end-line="46" selection-end-column="0" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="UnaryOperator.java" pinned="false" current-in-tab="false">
+        <entry file="jar://C:/Program Files/Java/jdk1.8.0_92/src.zip!/java/util/function/UnaryOperator.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="174">
+              <caret line="40" column="17" selection-start-line="40" selection-start-column="17" selection-end-line="40" selection-end-column="17" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Teste.txt" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Teste.txt">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="135">
+              <caret line="5" column="0" selection-start-line="5" selection-start-column="0" selection-end-line="5" selection-end-column="0" />
+              <folding />
             </state>
           </provider>
         </entry>
@@ -114,32 +133,6 @@
             <state relative-caret-position="174">
               <caret line="52" column="6" selection-start-line="52" selection-start-column="6" selection-end-line="52" selection-end-column="6" />
               <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="Function.java" pinned="false" current-in-tab="false">
-        <entry file="jar://C:/Program Files/Java/jdk1.8.0_92/src.zip!/java/util/function/Function.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="675">
-              <caret line="48" column="6" selection-start-line="48" selection-start-column="6" selection-end-line="48" selection-end-column="6" />
-              <folding>
-                <element signature="e#0#2870#0" expanded="false" />
-                <element signature="e#2837#2838#0" expanded="false" />
-                <element signature="e#2866#2867#0" expanded="false" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="Test.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/Test.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="459">
-              <caret line="19" column="70" selection-start-line="19" selection-start-column="70" selection-end-line="19" selection-end-column="70" />
-              <folding>
-                <element signature="imports" expanded="false" />
-              </folding>
             </state>
           </provider>
         </entry>
@@ -166,7 +159,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/src/br/com/abc/javacore/ZZFpadroesdeprojeto/test/TestePessoa.java" />
         <option value="$PROJECT_DIR$/src/br/com/abc/javacore/ZZFpadroesdeprojeto/classes/Pessoa.java" />
         <option value="$PROJECT_DIR$/src/br/com/abc/javacore/ZZFpadroesdeprojeto/classes/Aviao.java" />
         <option value="$PROJECT_DIR$/src/br/com/abc/javacore/ZZFpadroesdeprojeto/classes/TesteAviao.java" />
@@ -217,6 +209,7 @@
         <option value="$PROJECT_DIR$/src/br/com/abc/javacore/ZZKstreams/test/StreamTest3.java" />
         <option value="$PROJECT_DIR$/src/br/com/abc/javacore/ZZKstreams/classes/Pessoa.java" />
         <option value="$PROJECT_DIR$/src/br/com/abc/javacore/ZZKstreams/test/StreamTest4Reduce.java" />
+        <option value="$PROJECT_DIR$/src/br/com/abc/javacore/ZZKstreams/test/StreamTest5GerandoStreams.java" />
       </list>
     </option>
   </component>
@@ -231,8 +224,8 @@
     <treeState />
   </component>
   <component name="ProjectFrameBounds">
-    <option name="x" value="1912" />
-    <option name="y" value="-122" />
+    <option name="x" value="-8" />
+    <option name="y" value="-8" />
     <option name="width" value="1936" />
     <option name="height" value="1056" />
   </component>
@@ -492,8 +485,12 @@
     <property name="extract.method.default.visibility" value="private" />
   </component>
   <component name="RecentsManager">
-    <key name="CopyFile.RECENT_KEYS">
-      <recent name="G:\Users\GCUIT\Online Classes\JavaOnline\src\br\com\abc\javacore\ZZEconcorrencia\classes" />
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\Online Program\IdeaProjects\JavaOnline\src\br\com\abc\javacore\Oexception\error" />
+      <recent name="C:\Users\Online Program\IdeaProjects\JavaOnline\src\br\com\abc\javacore\introducaoclasses\classes" />
+      <recent name="C:\Users\Online Program\IdeaProjects\JavaOnline\src\br\com\abc\javacore\introducaoclasses\test" />
+      <recent name="C:\Users\Online Program\IdeaProjects\JavaOnline\src\br\com\abc\introducao\operadores" />
+      <recent name="C:\Users\Online Program\IdeaProjects\JavaOnline\src\br\com\abc\introducao\controlefluxo" />
     </key>
     <key name="CopyClassDialog.RECENTS_KEY">
       <recent name="br.com.abc.javacore.ZZHlambdas.classes" />
@@ -502,15 +499,11 @@
       <recent name="br.com.abc.javacore.test" />
       <recent name="br.com.abc.javacore.Fmodificadorestatico.test" />
     </key>
-    <key name="MoveFile.RECENT_KEYS">
-      <recent name="C:\Users\Online Program\IdeaProjects\JavaOnline\src\br\com\abc\javacore\Oexception\error" />
-      <recent name="C:\Users\Online Program\IdeaProjects\JavaOnline\src\br\com\abc\javacore\introducaoclasses\classes" />
-      <recent name="C:\Users\Online Program\IdeaProjects\JavaOnline\src\br\com\abc\javacore\introducaoclasses\test" />
-      <recent name="C:\Users\Online Program\IdeaProjects\JavaOnline\src\br\com\abc\introducao\operadores" />
-      <recent name="C:\Users\Online Program\IdeaProjects\JavaOnline\src\br\com\abc\introducao\controlefluxo" />
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="G:\Users\GCUIT\Online Classes\JavaOnline\src\br\com\abc\javacore\ZZEconcorrencia\classes" />
     </key>
   </component>
-  <component name="RunManager" selected="Application.StreamTest4Reduce">
+  <component name="RunManager" selected="Application.StreamTest5GerandoStreams">
     <configuration default="false" name="StreamTest" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea">
         <pattern>
@@ -519,26 +512,6 @@
         </pattern>
       </extension>
       <option name="MAIN_CLASS_NAME" value="br.com.abc.javacore.ZZKstreams.test.StreamTest" />
-      <option name="VM_PARAMETERS" />
-      <option name="PROGRAM_PARAMETERS" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
-      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
-      <option name="ALTERNATIVE_JRE_PATH" />
-      <option name="ENABLE_SWING_INSPECTOR" value="false" />
-      <option name="ENV_VARIABLES" />
-      <option name="PASS_PARENT_ENVS" value="true" />
-      <module name="JavaOnline" />
-      <envs />
-      <method />
-    </configuration>
-    <configuration default="false" name="QuickTest" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea">
-        <pattern>
-          <option name="PATTERN" value="br.com.abc.javacore.Zcolecoes.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="MAIN_CLASS_NAME" value="br.com.abc.javacore.Zcolecoes.QuickTest" />
       <option name="VM_PARAMETERS" />
       <option name="PROGRAM_PARAMETERS" />
       <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
@@ -599,6 +572,26 @@
         </pattern>
       </extension>
       <option name="MAIN_CLASS_NAME" value="br.com.abc.javacore.ZZKstreams.test.StreamTest4Reduce" />
+      <option name="VM_PARAMETERS" />
+      <option name="PROGRAM_PARAMETERS" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="ENABLE_SWING_INSPECTOR" value="false" />
+      <option name="ENV_VARIABLES" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <module name="JavaOnline" />
+      <envs />
+      <method />
+    </configuration>
+    <configuration default="false" name="StreamTest5GerandoStreams" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea">
+        <pattern>
+          <option name="PATTERN" value="br.com.abc.javacore.ZZKstreams.test.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="MAIN_CLASS_NAME" value="br.com.abc.javacore.ZZKstreams.test.StreamTest5GerandoStreams" />
       <option name="VM_PARAMETERS" />
       <option name="PROGRAM_PARAMETERS" />
       <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
@@ -847,18 +840,18 @@
     </configuration>
     <list size="5">
       <item index="0" class="java.lang.String" itemvalue="Application.StreamTest" />
-      <item index="1" class="java.lang.String" itemvalue="Application.QuickTest" />
-      <item index="2" class="java.lang.String" itemvalue="Application.StreamTest2" />
-      <item index="3" class="java.lang.String" itemvalue="Application.StreamTest3" />
-      <item index="4" class="java.lang.String" itemvalue="Application.StreamTest4Reduce" />
+      <item index="1" class="java.lang.String" itemvalue="Application.StreamTest2" />
+      <item index="2" class="java.lang.String" itemvalue="Application.StreamTest3" />
+      <item index="3" class="java.lang.String" itemvalue="Application.StreamTest4Reduce" />
+      <item index="4" class="java.lang.String" itemvalue="Application.StreamTest5GerandoStreams" />
     </list>
     <recent_temporary>
       <list size="5">
-        <item index="0" class="java.lang.String" itemvalue="Application.StreamTest4Reduce" />
-        <item index="1" class="java.lang.String" itemvalue="Application.StreamTest3" />
-        <item index="2" class="java.lang.String" itemvalue="Application.StreamTest2" />
-        <item index="3" class="java.lang.String" itemvalue="Application.StreamTest" />
-        <item index="4" class="java.lang.String" itemvalue="Application.QuickTest" />
+        <item index="0" class="java.lang.String" itemvalue="Application.StreamTest5GerandoStreams" />
+        <item index="1" class="java.lang.String" itemvalue="Application.StreamTest4Reduce" />
+        <item index="2" class="java.lang.String" itemvalue="Application.StreamTest3" />
+        <item index="3" class="java.lang.String" itemvalue="Application.StreamTest2" />
+        <item index="4" class="java.lang.String" itemvalue="Application.StreamTest" />
       </list>
     </recent_temporary>
   </component>
@@ -932,11 +925,18 @@
       <option name="project" value="LOCAL" />
       <updated>1482159101079</updated>
     </task>
-    <option name="localTasksCounter" value="9" />
+    <task id="LOCAL-00009" summary="aula 189">
+      <created>1482178060866</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1482178060866</updated>
+    </task>
+    <option name="localTasksCounter" value="10" />
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="1912" y="-122" width="1936" height="1056" extended-state="6" />
+    <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
     <editor active="true" />
     <layout>
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
@@ -1011,7 +1011,8 @@
     <MESSAGE value="aula 186" />
     <MESSAGE value="aula 187" />
     <MESSAGE value="aula 188" />
-    <option name="LAST_COMMIT_MESSAGE" value="aula 188" />
+    <MESSAGE value="aula 189" />
+    <option name="LAST_COMMIT_MESSAGE" value="aula 189" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -1024,27 +1025,6 @@
     <option name="FILTER_TARGETS" value="false" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/pasta/arquivo_qualquer.txt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/pasta/subpasta/subsubpasta/file.bkp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/pasta/subpasta/subsubpasta/file.txt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/pasta/subpasta/subsubpasta/file2.bkp">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
@@ -1418,12 +1398,38 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/br/com/abc/javacore/ZZKstreams/test/StreamTest4Reduce.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="405">
-          <caret line="42" column="23" selection-start-line="42" selection-start-column="23" selection-end-line="42" selection-end-column="23" />
+        <state relative-caret-position="459">
+          <caret line="46" column="48" selection-start-line="46" selection-start-column="48" selection-end-line="46" selection-end-column="48" />
           <folding>
             <element signature="imports" expanded="true" />
             <element signature="e#1781#1782#0" expanded="true" />
             <element signature="e#1837#1838#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Teste.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="135">
+          <caret line="5" column="0" selection-start-line="5" selection-start-column="0" selection-end-line="5" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://C:/Program Files/Java/jdk1.8.0_92/src.zip!/java/util/function/UnaryOperator.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="174">
+          <caret line="40" column="17" selection-start-line="40" selection-start-column="17" selection-end-line="40" selection-end-column="17" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/br/com/abc/javacore/ZZKstreams/test/StreamTest5GerandoStreams.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="333">
+          <caret line="46" column="0" selection-start-line="46" selection-start-column="0" selection-end-line="46" selection-end-column="0" />
+          <folding>
+            <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>
