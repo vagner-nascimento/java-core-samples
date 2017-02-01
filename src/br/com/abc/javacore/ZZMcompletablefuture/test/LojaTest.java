@@ -4,6 +4,8 @@ import br.com.abc.javacore.ZZMcompletablefuture.classes.Loja;
 
 import java.util.concurrent.ExecutionException;
 import java.util.concurrent.Future;
+import java.util.concurrent.TimeUnit;
+import java.util.concurrent.TimeoutException;
 
 /**
  * Created by William Suane on 1/26/2017.
@@ -36,7 +38,7 @@ public class LojaTest {
         } catch (InterruptedException | ExecutionException e) {
             e.printStackTrace();
         }
-  System.out.println("Tempo que levou para pegar o resultado: "+ (System.currentTimeMillis()-start) +" ms");
+        System.out.println("Tempo que levou para pegar o resultado: "+ (System.currentTimeMillis()-start) +" ms");
     }
 
     private static void enrolando() {
