@@ -33,18 +33,21 @@ public class Aluno extends Pessoa implements Serializable {
                 '}';
     }
 
+    // Metodo sobrescrito implicitamente, não tem isso na interface.
     private void writeObject(ObjectOutputStream oos){
         try{
-            oos.defaultWriteObject();
+            oos.defaultWriteObject(); // RESPEITAR A ORDEM PARA LEITURA E ESCRITA, DEVEM SER IGUAIS
             oos.writeUTF(turma.getNome());
         }catch (IOException e){
             e.printStackTrace();
         }
     }
 
+    // Metodo sobrescrito implicitamente, não tem isso na interface nem documentação.
+    // Usado aqui para incluir a a classe turma  na serialização sem colocar Serealizable na classe
     private void readObject(ObjectInputStream ois){
         try{
-            ois.defaultReadObject();
+            ois.defaultReadObject(); // RESPEITAR A ORDEM PARA LEITURA E ESCRITA, DEVEM SER IGUAIS
             turma = new Turma(ois.readUTF());
         }catch (IOException | ClassNotFoundException e) {
             e.printStackTrace();

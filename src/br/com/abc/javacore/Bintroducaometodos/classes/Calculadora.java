@@ -49,12 +49,12 @@ public class Calculadora {
         System.out.println(soma);
     }
 
-    public static void somaVarArgs(int... numeros){
+    public static void somaVarArgs(String str, int... numeros){
         int soma = 0;
         for(int num : numeros){
             soma += num;
         }
-        System.out.println(soma);
+        System.out.println(String.format("%s - %d", str,soma));
     }
 
 }

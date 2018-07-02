@@ -14,7 +14,7 @@ import java.util.Set;
  */
 public class PosixFileAttributesTest {
     public static void main(String[] args) throws IOException {
-        Path path = Paths.get("/home/william/dev/arquivo");
+        Path path = Paths.get("/home/vagner/dev/arquivo");
         PosixFileAttributes posix = Files.readAttributes(path, PosixFileAttributes.class);
         System.out.println(posix.permissions());
         System.out.println("Alterando as permissoes");

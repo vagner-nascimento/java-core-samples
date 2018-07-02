@@ -25,7 +25,7 @@ public abstract class Funcionario extends Pessoa {
                 ", salario=" + salario +
                 '}';
     }
-    public  void imprime(){
+    public void imprime(){
         System.out.println("Dentro do imprime de funcionario");
     }
 

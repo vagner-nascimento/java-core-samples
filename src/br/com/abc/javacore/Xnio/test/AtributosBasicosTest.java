@@ -31,7 +31,7 @@ public class AtributosBasicosTest {
         System.out.println(Files.getLastModifiedTime(path));
         Files.deleteIfExists(path);
 
-        path = Paths.get("src\\br\\com\\abc\\javacore\\Aintroducaoclasses\\classes\\Carro.java");
+        path = Paths.get("/home/vagner/dev/projects/java/devdojo_tutorials/Arquivo.txt");
         System.out.println(Files.isReadable(path));
         System.out.println(Files.isWritable(path));
         System.out.println(Files.isExecutable(path));
@@ -45,6 +45,7 @@ public class AtributosBasicosTest {
 //        System.out.println(atributosBasicos.isSymbolicLink());
 //        System.out.println(atributosBasicos.isRegularFile());
 
+
         // BasicFileAttributeView, PosixFileAttributeView, DosFileAttributeView, FileOwnerAttributeView, AclFileAttributeView
         FileTime lastModified = atributosBasicos.lastModifiedTime();
         FileTime created = atributosBasicos.creationTime();
@@ -55,7 +56,6 @@ public class AtributosBasicosTest {
         System.out.println("create "+ atributosBasicos.creationTime());
         System.out.println("lastAccess "+ atributosBasicos.lastAccessTime());
         System.out.println("LastModified "+ atributosBasicos.lastModifiedTime());
-
 
     }
 }

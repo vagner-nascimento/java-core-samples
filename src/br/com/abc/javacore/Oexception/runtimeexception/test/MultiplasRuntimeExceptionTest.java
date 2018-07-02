@@ -23,7 +23,9 @@ public class MultiplasRuntimeExceptionTest {
         try {
             talvezLanceException();
         } catch (Exception e) {
-
+            if(e instanceof  SQLException){
+                ((SQLException)e).getSQLState();
+            }
         }
     }
 

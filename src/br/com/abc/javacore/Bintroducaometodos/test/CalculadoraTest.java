@@ -20,6 +20,7 @@ public class CalculadoraTest {
 
         int[] numeros = {1,2,3,4,5};
         Calculadora.somaArray(numeros);
-        Calculadora.somaVarArgs(1,2,3,4,5);
+        Calculadora.somaArray(new int[] {1,2,3,4,5});
+        Calculadora.somaVarArgs("Oi",1,2,3,4,5);
     }
 }

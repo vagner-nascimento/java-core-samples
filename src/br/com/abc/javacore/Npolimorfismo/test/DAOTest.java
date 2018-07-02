@@ -15,7 +15,7 @@ public class DAOTest {
     public static void main(String[] args) {
         GenericDAO arquivoDAO = new ArquivoDAOImpl();
         arquivoDAO.save();
-        List<String> lista = new LinkedList<>();
+        List<String> lista = new ArrayList<>();
         lista.add("nome1");
         lista.add("nome2");
         lista.add("nome3");

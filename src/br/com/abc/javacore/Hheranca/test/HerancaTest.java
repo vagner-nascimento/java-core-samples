@@ -22,7 +22,8 @@ public class HerancaTest {
         f.setSalario(15000);
         f.setEndereco(end);
 //        f.imprime();
-
+        System.out.println("-------------------------------");
+        Funcionario f1 = new Funcionario("Arthur");
 
     }
 }
