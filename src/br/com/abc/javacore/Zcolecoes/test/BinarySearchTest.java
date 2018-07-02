@@ -33,7 +33,8 @@ public class BinarySearchTest {
         produtos.add(produto3);
         produtos.add(produto4);
         Collections.sort(produtos, new ProdutoNomeComparator());
-        Produto produto5 = new Produto("000", "Antena", 50);
+        Produto produto5 = new Produto(2*+
+                "000", "Antena", 50);
         for (Produto produto : produtos) {
             System.out.println(produto);
         }
