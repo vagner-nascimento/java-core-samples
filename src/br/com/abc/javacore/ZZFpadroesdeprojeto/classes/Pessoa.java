@@ -10,6 +10,7 @@ public class Pessoa {
     private String apelido;
     private String nomeDoPai;
 
+    // Assim o construtor só pode ser usado internamente (CUIDADO: pode dar problema em alguns frameworks)
     private Pessoa(String nome, String ultimoNome, String nomeDoMeio, String apelido, String nomeDoPai) {
         this.nome = nome;
         this.ultimoNome = ultimoNome;

@@ -25,8 +25,8 @@ public class ScheduledThreadPoolTest {
                 }
             }
         };
-//        scheduledExecutorService.scheduleAtFixedRate(beeper, 1, 5, TimeUnit.SECONDS);
-        final ScheduledFuture<?> scheduledFuture = scheduledExecutorService.scheduleWithFixedDelay(beeper, 1, 5, TimeUnit.SECONDS);
+        //scheduledExecutorService.scheduleAtFixedRate(beeper, 0, 5, TimeUnit.SECONDS);
+        final ScheduledFuture<?> scheduledFuture = scheduledExecutorService.scheduleWithFixedDelay(beeper, 0, 5, TimeUnit.SECONDS); //ASSIM É POSSIVEL CANCELAR EM EXECUÇÃO
         scheduledExecutorService.schedule(new Runnable() {
             @Override
             public void run() {
@@ -35,6 +35,7 @@ public class ScheduledThreadPoolTest {
                 scheduledExecutorService.shutdown();
             }
         }, 10, TimeUnit.SECONDS);
+
     }
 
     public static void main(String[] args) {

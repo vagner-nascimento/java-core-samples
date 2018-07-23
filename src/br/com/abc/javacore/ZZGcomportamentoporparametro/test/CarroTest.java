@@ -61,6 +61,7 @@ public class CarroTest {
         return result;
     }
 
+    // FUNÇÃO DE FILTRAGEM TOTALMENTE GENÉRICA
     public static <T> List<T> filtrar(List<T> list, Predicate<T> predicate) {
         List<T> result = new ArrayList<>();
         for (T e : list) {
@@ -79,16 +80,37 @@ public class CarroTest {
 //        System.out.println(filtrarCarroPorCor(carros, "verde"));
 //        System.out.println(filtrarCarroPorCor(carros, "vermelho"));
 //        System.out.println(filtrarCarrosDezAnosFabricados(carros));
+
+        // COM UMA CLASSE QUE IMPLEMENTA A PREDICATE CRIADA PARA CADA FILTRO
         System.out.println(filtrarCarros(carros, new CarrosCorVerdePredicate()));
         System.out.println(filtrarCarros(carros, new CarrosDezAnosRecentePredicate()));
 
-        System.out.println(filtrarCarros(carros, (Carro carro) -> carro.getCor().equals("verde")));
-        System.out.println(filtrar(carros, new Predicate<Carro>(){
+        // COM MÈTODO ANÔNIMO IMPLENETANDO DIRETAMENTE NA CHAMADA DA INTERFACE CRIADA
+        System.out.println(filtrarCarros(carros, new CarroPredicate() {
             @Override
             public boolean test(Carro carro) {
                 return carro.getCor().equals("verde");
             }
         }));
+
+        // COM LAMBDA (FUNCIONAL)
+        System.out.println(filtrarCarros(carros, (Carro carro) -> carro.getCor().equals("verde")));
+        System.out.println(filtrar(carros, carro -> carro.getCor().equals("verde")));
         System.out.println(filtrar(numeros, integer -> integer % 2 == 0));
+
+        // COM OBJETO ANÔNIMO DA INTERFACE FUNCIONAL PREDICATE
+        System.out.println(filtrar(carros, new Predicate<Carro>() { // TODO: Alt+Enter en cima de Predicate ajuda a alter para lambda function
+            @Override
+            public boolean test(Carro carro) {
+                return carro.getCor().equals("verde");
+            }
+        }));
+        // MESMO FILTRAR COM UM TIPO TOTALMENTE DIFERENTE
+        System.out.println(filtrar(numeros, new Predicate<Integer>() {
+            @Override
+            public boolean test(Integer integer) {
+                return integer % 2 == 0;
+            }
+        }));
     }
 }

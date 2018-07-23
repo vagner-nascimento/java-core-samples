@@ -3,7 +3,9 @@ package br.com.abc.javacore.ZZDthreads.test;
 /**
  * Created by William Suane on 10/6/2016.
  */
-// Daemon x User
+// TIPOS DE THREADS: Daemon x User
+// Diferença entre elas: User: A JVM só finaliza dps que todas fanilizarem.
+// Deamon: A JVM finaliza mesmo com elas em execução.
 class ThreadExemplo extends Thread {
     private char c;
 
@@ -62,14 +64,13 @@ public class ThreadTest {
         Thread t2 = new Thread(new ThreadExemploRunnable('B'), "T2");
         Thread t3 = new Thread(new ThreadExemploRunnable('C'), "T3");
         Thread t4 = new Thread(new ThreadExemploRunnable('D'), "T4");
-        t4.setPriority(Thread.MAX_PRIORITY);
-        t1.start();
-        t1.join();
+        t4.setPriority(Thread.MAX_PRIORITY); // a escala de prioridade normalmente vai de 1 a 10, mas pode mudar de JVM para JVM, indo de 1 a X.
+        t1.start();                         // Melhor usar a constante, mas usar de 1 a 10 funciona tbm. NÃO É GARANTIDA A PRIORIDADE, MAS NORMALMENTE FUNCIONA.
         t2.start();
+        t1.join();
+        t2.join();
 
-//        t3.start();
-//        t4.start();
-
-
+        t3.start();
+        t4.start();
     }
 }

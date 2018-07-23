@@ -29,21 +29,16 @@ class ThreadTrabalhadoraExecutor implements Runnable{
 }
 public class ExecutorTest {
     public static void main(String[] args) {
-        System.out.println(Runtime.getRuntime().availableProcessors());
-//        ExecutorService executorService = Executors.newFixedThreadPool(4);
-//        ExecutorService executorService = Executors.newCachedThreadPool();
-        ExecutorService executorService = Executors.newSingleThreadExecutor();
-//        ThreadPoolExecutor threadPoolExecutor = (ThreadPoolExecutor) executorService;
-//        threadPoolExecutor.setCorePoolSize(Runtime.getRuntime().availableProcessors());
-        executorService.execute(new ThreadTrabalhadoraExecutor("1"));
-        executorService.execute(new ThreadTrabalhadoraExecutor("2"));
-        executorService.execute(new ThreadTrabalhadoraExecutor("3"));
-        executorService.execute(new ThreadTrabalhadoraExecutor("4"));
-        executorService.execute(new ThreadTrabalhadoraExecutor("5"));
-        executorService.execute(new ThreadTrabalhadoraExecutor("6"));
-        executorService.execute(new ThreadTrabalhadoraExecutor("7"));
-        executorService.execute(new ThreadTrabalhadoraExecutor("8"));
-        executorService.shutdown();
+        System.out.println(Runtime.getRuntime().availableProcessors()); // Geralmente os processadores suportam até 2 threads ao mesmo tempo, É BOM criar baseado nesta informação
+        ExecutorService executorService = Executors.newFixedThreadPool(4); // Seta o limite de threads e só trabalha com esse número de threads simultaneamente
+//        ExecutorService executorService = Executors.newCachedThreadPool(); // Não tem limite, cria thread enquanto for pedido, remove as threads inativas a 60 seg ou +
+//        ExecutorService executorService = Executors.newSingleThreadExecutor(); // Usa apenas uma thread por vez... as demais tarefas ficam em uma queue FIFO até serem chamadas uma a uma
+        ThreadPoolExecutor threadPoolExecutor = (ThreadPoolExecutor) executorService;
+        threadPoolExecutor.setCorePoolSize(Runtime.getRuntime().availableProcessors() * 2); // Altera a quantidade de threads com o pool em execução. Não funciona com o SingleThreadExecutor
+        for (int i = 1; i <= 16; i++) {
+            executorService.execute(new ThreadTrabalhadoraExecutor(String.valueOf(i)));
+        }
+        executorService.shutdown(); // Só executa depois efetivamente quando todas as threads terminarem sua execução
         while(!executorService.isTerminated()){}
         System.out.println(executorService.isTerminated());
         System.out.println("Finalizado");

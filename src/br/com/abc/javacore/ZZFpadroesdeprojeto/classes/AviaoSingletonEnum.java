@@ -6,7 +6,7 @@ import java.util.Set;
 /**
  * Created by William Suane on 11/11/2016.
  */
-public enum AviaoSingletonEnum {
+public enum AviaoSingletonEnum { // NÃO PRECISA SINCRONIZAR NADA, JÁ É TRHEAD SAFE E NÃO DÁ PARA MUDAR COM REFLECTION
     INSTANCE;
     private Set<String> assentosDisponiveis;
 

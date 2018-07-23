@@ -16,7 +16,7 @@ public class Entregador implements Runnable {
         System.out.println(nomeThread + " Começando o trabalho de entrega");
         int qtdPendente = listaMembros.getEmailsPendentes();
         boolean aberta = listaMembros.isAberta();
-        while (aberta || qtdPendente > 0) {
+        while (aberta || qtdPendente > 0) { // O Aberta faz com que as threads fiquem abertas esperando novos e-mails.
             try {
                 String email = listaMembros.obterEmailMembro();
                 if (email != null) {

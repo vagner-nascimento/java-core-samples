@@ -6,6 +6,7 @@ package br.com.abc.javacore.ZZBclassesinternas.test;
 public class ClassesInternasTest {
     private String nome = "William Jedi do DevDojo";
 
+    //TEM ACESSO AOS ATRIBUTO DA CLASSE EXTERNA
     class Interna {
         public void verClasseExterna() {
             System.out.println(nome);

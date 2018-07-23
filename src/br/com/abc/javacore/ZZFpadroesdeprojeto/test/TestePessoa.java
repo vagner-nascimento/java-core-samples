@@ -7,7 +7,7 @@ import br.com.abc.javacore.ZZFpadroesdeprojeto.classes.Pessoa;
  */
 public class TestePessoa {
     public static void main(String[] args) {
-        Pessoa p = new Pessoa.PessoaBuilder("William")
+        Pessoa p = new Pessoa.PessoaBuilder("William") // Assim o nome fica obrigatório.
                 .nomeDoMeio("Suane")
                 .ultimoNome("Queiroz")
                 .nomeDoPai("William")

@@ -16,23 +16,27 @@ public class ContaTest implements Runnable {
         anna.start();
     }
 
+    // public static synchronized void imprime() { } = mesma coisa que abaixo, significa que vc adiquire um lock para a classe inteira.
     public static void imprime() {
-        synchronized (ContaTest.class){
+        synchronized (ContaTest.class) {
             System.out.println("asasaas");
         }
     }
 
+    // DA PARA USAR SYNC no MÉTODO TB: private synchronized void saque(int valor){}
+    // 1 LOCK por objeto
+    // synchronized usa o lock do objeto, isso é, enquanto ele estiver sendo usado por uma thread nenhuma outra poderá iniciar sobre o mesmo objeto.
     private void saque(int valor) {
         synchronized (conta) {
             if (conta.getSaldo() >= valor) {
                 System.out.println(Thread.currentThread().getName() + " está indo sacar");
                 conta.saque(valor);
+                System.out.println(Thread.currentThread().getName() + " completou o saque, saldo: " + conta.getSaldo());
                 try {
-                    Thread.sleep(200);
+                    Thread.sleep(200); // ISSO GARANTE QUE NÃO VAI FICAR LOCK SÓ PARA UMA THREAD
                 } catch (InterruptedException e) {
                     e.printStackTrace();
                 }
-                System.out.println(Thread.currentThread().getName() + " completou o saque, saldo: " + conta.getSaldo());
             } else {
                 System.out.println("Sem dinheiro para " + Thread.currentThread().getName() + " efetuar o saque, saldo: " + conta.getSaldo());
             }

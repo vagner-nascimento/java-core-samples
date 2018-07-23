@@ -15,6 +15,8 @@ public class AviaoSingletonTest {
         agendarAssento("1A");
         AviaoSingleton aviaoSingleton = AviaoSingleton.getINSTANCE();
         AviaoSingleton aviaoSingleton2 = null;
+        // USANDO REFLECTION PARA INICIALIZAR UM OBJETO ATRAVÉS DE UM CONSTRUTOR PRIVADO, ASSIM BURLA O SINGLETON
+        // PARA EVITAR ISSO SE CONSTROI O SINGLETON COMO ENUM
         Constructor[] constructors = AviaoSingleton.class.getDeclaredConstructors();
         for(Constructor constructor : constructors){
             constructor.setAccessible(true);

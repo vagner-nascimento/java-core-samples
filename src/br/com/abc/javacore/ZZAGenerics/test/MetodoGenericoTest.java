@@ -12,9 +12,17 @@ public class MetodoGenericoTest {
         criarArray(new Cachorro());
     }
 
+    //SEM RETORNO
     public static <T extends Animal> void criarArray(T t) {
         List<T> lista = new ArrayList<>();
         lista.add(t);
         System.out.println(lista);
+    }
+    //COM RETORNO
+    public static <T extends Animal> List<T> criarArray2(T t) {
+        List<T> lista = new ArrayList<>();
+        lista.add(t);
+        System.out.println(lista);
+        return lista;
     }
 }

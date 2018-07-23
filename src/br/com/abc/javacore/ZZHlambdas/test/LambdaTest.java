@@ -15,12 +15,13 @@ public class LambdaTest {
     // (String s ) -> s.length()
     // (int a, int b) -> {sout(a+b)}
     public static void main(String[] args) {
-        CarroPredicate carroPredicate = new CarroPredicate() {
+        CarroPredicate carroPredicate = new CarroPredicate() { // Classe ANÔNIMA
             @Override
             public boolean test(Carro carro) {
                 return carro.getCor().equals("verde");
             }
         };
+        // MESMA COISA DA LINHA DE CIMA
         Predicate<Carro> carroPredicate2 = (Carro carro) -> carro.getCor().equals("verde");
         System.out.println(carroPredicate.test(new Carro("verde", 2012)));
         System.out.println(carroPredicate2.test(new Carro("verde", 2012)));
