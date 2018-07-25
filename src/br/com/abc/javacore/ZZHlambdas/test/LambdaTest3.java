@@ -5,7 +5,6 @@ import br.com.abc.javacore.ZZHlambdas.classes.ComparadorCarro;
 
 import java.util.ArrayList;
 import java.util.Collections;
-import java.util.Comparator;
 import java.util.List;
 import java.util.function.*;
 
@@ -18,18 +17,25 @@ public class LambdaTest3 {
     public static void main(String[] args) {
         forEach(asList("William", "DevDojo", "facebook.com/devdojobr"), System.out::println);
         List<Carro> carros = asList(new Carro("Vermelho", 1999), new Carro("Azul", 2005), new Carro("Preto", 1985));
+
         //Reference to a static method
         Collections.sort(carros, ComparadorCarro::comparePorCor);
         System.out.println(carros);
+
         //Reference to an instance method of a particular object
+        //Stanciando normalmente o objeto
         ComparadorCarro comparadorCarro = new ComparadorCarro();
+        Collections.sort(carros, comparadorCarro::comparePorAno);
+        System.out.println(carros);
+        // Chamado a classes com Suplier
         Supplier<ComparadorCarro> comparadorCarroSupplier = ComparadorCarro::new;
         Collections.sort(carros, comparadorCarroSupplier.get()::comparePorAno);
         System.out.println(carros);
+
         //Reference to an instance method of an arbitrary object of a particular type
         List<String> nomes = asList("William", "DevDojo", "Anna", "Brenon");
         nomes.sort((s1, s2) -> s1.compareTo(s2));
-        nomes.sort(String::compareTo);
+        nomes.sort(String::compareTo); //Mesma coisa do de cima com Mthod Reference
         System.out.println(nomes);
         Function<String, Integer> stringToInteger = (String s) -> Integer.parseInt(s);
         Function<String, Integer> stringToInteger2 = Integer::parseInt;
@@ -37,6 +43,7 @@ public class LambdaTest3 {
         BiPredicate<List<String>, String> contains2 = List::contains;
         System.out.println(stringToInteger2.apply("10"));
         System.out.println(contains2.test(nomes,"William"));
+
         //Reference to a constructor
         BiFunction<String, Integer, Carro> carroBiFunction = (s,i) -> new Carro(s,i);
         BiFunction<String, Integer, Carro> carroBiFunction2 = Carro::new;
