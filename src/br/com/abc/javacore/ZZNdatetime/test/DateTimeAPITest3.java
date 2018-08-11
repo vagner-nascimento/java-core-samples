@@ -11,6 +11,8 @@ import java.time.temporal.ChronoUnit;
  */
 public class DateTimeAPITest3 {
     public static void main(String[] args) {
+        //TODO: DvDj 205 - Nova API Date e Time - A maioria dos métodos das classes são estáticos e devolvem outro objeto
+        //por isso precisamos sempre atribuir a um novo ou ao mesmo objeto que invocou o método.
         LocalDate localDate = LocalDate.of(2017, Month.FEBRUARY,25);
         System.out.println(localDate);
         localDate = localDate.withYear(2020);

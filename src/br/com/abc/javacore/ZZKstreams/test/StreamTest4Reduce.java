@@ -26,26 +26,26 @@ public class StreamTest4Reduce {
         Integer mult = getStream().reduce(0, (x, y) -> x * y);
         System.out.println(mult);
 
-        Optional<Integer> max = getStream().reduce((x, y) -> x > y ? x : y);
+        Optional<Integer> max = getStream().reduce((x, y) -> x > y ? x : y); // FORMA FEIA
         System.out.println(max.get());
 
-        Optional<Integer> max2 = getStream().reduce(Integer::max);
+        Optional<Integer> max2 = getStream().reduce(Integer::max); // FORMA BONITA
         System.out.println(max2.get());
 
         Stream<Pessoa> streamPessoa = Pessoa.bancoDePessoas().stream();
         Optional<Double> somaSalario = streamPessoa.filter(p -> p.getSalario() > 4000)
                 .map(Pessoa::getSalario)
-                .reduce(Double::sum);
+                .reduce(Double::sum); // SEMPRE TRABALHA COM TIPOS PRIMITIVOS, FAZ BOXING E PERDE PEPRFORMANCE
         System.out.println(somaSalario.get());
 
         Double somaDouble = Pessoa.bancoDePessoas().stream().filter(p -> p.getSalario() > 4000)
-                .mapToDouble(Pessoa::getSalario)
+                .mapToDouble(Pessoa::getSalario) // ASSIM FICA MAIS PERFORMÁTICO
                 .sum();
         System.out.println(somaDouble);
 
         DoubleStream doubleStream = Pessoa.bancoDePessoas().stream().filter(p -> p.getSalario() > 4000)
                 .mapToDouble(Pessoa::getSalario);
-        Stream<Double> doubleStream2  = doubleStream.boxed();
+        Stream<Double> doubleStream2 = doubleStream.boxed(); // RETORNA UM STREAM GENÉRICO A PARTIR DO DOUBLE STREAM
     }
 
     private static Stream<Integer> getStream() {

@@ -1,2 +1,6 @@
+# Java Compiled files
 out/
+*.class
+
+# IDEA config files
 .idea/

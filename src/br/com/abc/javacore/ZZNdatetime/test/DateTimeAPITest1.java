@@ -17,7 +17,7 @@ public class DateTimeAPITest1 {
     public static void main(String[] args) {
 //        System.out.println(new Date());
 //        System.out.println(Calendar.getInstance());
-        LocalDate date = LocalDate.of(2020, Month.DECEMBER, 25);
+        LocalDate date  = LocalDate.of(2020, Month.DECEMBER, 25);
         System.out.println(date.getYear());
         System.out.println(date.getMonth());
         System.out.println(date.getMonthValue());

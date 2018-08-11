@@ -24,6 +24,8 @@ public class OptionalTest2 {
         System.out.println(obterNomeSeguradoraComIdade(p, 18));
         Map<String, String> map = new HashMap<>();
         System.out.println(Optional.ofNullable(map.get("kaka")));
+        Optional.ofNullable(map.get("kaka")).ifPresent(x -> System.out.println(x));
+        System.out.println(Optional.ofNullable(map.get("kaka")).orElse("kaka not found"));
         stringToInt("A");
     }
 

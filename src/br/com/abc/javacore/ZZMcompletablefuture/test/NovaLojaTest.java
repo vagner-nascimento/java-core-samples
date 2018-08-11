@@ -12,6 +12,7 @@ import java.util.concurrent.Executors;
 import java.util.stream.Collectors;
 import java.util.stream.Stream;
 
+//AULA 200 DEV DOJO: https://www.youtube.com/watch?v=ZZbS9oQkRTY&index=203&list=PL62G310vn6nHrMr1tFLNOYP_c73m6nAzL
 /**
  * Created by William Suane on 2/8/2017.
  */
@@ -30,7 +31,7 @@ public class NovaLojaTest {
         CompletableFuture[] completableFutures = acharPrecosStream(lojas, executor)
                 .map(f -> f.thenAccept(s -> System.out.println(s+"(finalizado em: "+
                         (System.currentTimeMillis() - start)+")")))
-                .toArray(CompletableFuture[]::new);
+                .toArray (CompletableFuture[]::new);
         CompletableFuture.allOf(completableFutures).join();
         CompletableFuture.anyOf(completableFutures).join();
         System.out.println("Todas as lojas responderam em: " + (System.currentTimeMillis() - start) + " ms");

@@ -30,12 +30,12 @@ public class DateTimeAPITest2 {
         Duration d1 = Duration.between(dt1,dt2);
         Duration d2 = Duration.between(time1,time2);
         Duration d3 = Duration.between(Instant.now(),Instant.now().plusSeconds(1000));
-//        Duration d4 = Duration.between(dt2,time2);
+//        Duration d4 = Duration.between(dt2,time2); //TODO: DvDJ204 - Duration - Não pode usar com LocalDate nem misturando LocalDate com Time
 //        Duration d5 = Duration.between(LocalDate.now(), LocalDate.now().plusDays(20));
+//        Duration d71 = Duration.of(3, ChronoUnit.MONTHS); //ASSIM LANÇA "UnsupportedTemporalTypeException"
         Duration d6 = Duration.between(dt2,time2.atDate(dt2.toLocalDate()));
         Duration d7 = Duration.ofMinutes(3);
         Duration d8 = Duration.ofDays(10);
-
 
         System.out.println(d1);
         System.out.println(d2);

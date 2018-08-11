@@ -7,7 +7,6 @@ import java.util.Collections;
 import java.util.Comparator;
 import java.util.List;
 import java.util.stream.Collectors;
-import java.util.stream.Stream;
 
 /**
  * Created by William Suane on 12/14/2016.
@@ -45,7 +44,5 @@ public class StreamTest {
                 .count());
         pessoas.stream().forEach(System.out::println);
         //Intermediate e Terminal
-
-
     }
 }

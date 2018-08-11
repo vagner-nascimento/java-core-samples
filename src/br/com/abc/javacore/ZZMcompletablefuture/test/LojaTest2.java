@@ -128,7 +128,7 @@ public class LojaTest2 {
         acharPrecos4(lojas);
         // NumeroDeThreads = Ncpu * Ucpu * (1+W/C)
         // Ncpu = numero de cores disponivel
-        // Ucpu = quantidade de utilização da CPU (0-1)
+        // Ucpu = quantidade de utilização da CPU (0-1) (% de utilização da CPU, onde 1 é 100%)
         // W/C = wait time e compute time
         // Ntrheads = 8 * 1 * (1+99) = 800 threads
         final Executor executor = Executors.newFixedThreadPool(Math.min(lojas.size(), 100), r -> {
